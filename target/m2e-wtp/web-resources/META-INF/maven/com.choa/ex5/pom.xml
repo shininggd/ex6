@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.choa</groupId>
-	<artifactId>ex6</artifactId>
-	<name>spring_ex6</name>
+	<artifactId>ex5</artifactId>
+	<name>spring_ex_5</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>

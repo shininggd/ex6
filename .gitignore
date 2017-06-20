@@ -7,3 +7,4 @@
 .settings/org.springframework.ide.eclipse.beans.core.prefs
 .settings/org.eclipse.wst.validation.prefs
 .settings/org.eclipse.wst.common.project.facet.core.xml
+/target/

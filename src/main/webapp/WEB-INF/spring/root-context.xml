@@ -18,7 +18,13 @@
 	
 	<!-- Mapper 와 connenction 연결할것 -->
 	
-	
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml"/>
+	</bean>
+	<bean class="org.mybatis.spring.SqlSessionTemplate"><!--빨간줄은 생성자 필요라는 뜻-->
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"/>
+	</bean>
 	
 	
 	<!-- DAO 사용할것 -->

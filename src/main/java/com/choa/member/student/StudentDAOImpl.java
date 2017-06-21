@@ -23,7 +23,7 @@ public class StudentDAOImpl implements MemberDAO {
 		result = sqlSession.insert(MAPPER+"joinMember", memberDTO);
 		result = result * sqlSession.insert(MAPPER+"joinStudent", memberDTO);
 
-		return 0;
+		return result;
 	}
 
 }

@@ -20,10 +20,11 @@ public class TeacherDAOImpl implements MemberDAO {
 	@Override
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
 		int result = 0;
+		System.out.println("전");
 		memberDTO = (TeacherDTO)memberDTO;
+		
 		result = sqlSession.insert(MAPPER+"joinMember", memberDTO);
 		result = result * sqlSession.insert(MAPPER+"joinTeacher", memberDTO);
-		
 		return result;
 	}
 

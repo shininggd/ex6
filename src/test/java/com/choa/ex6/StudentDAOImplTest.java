@@ -24,13 +24,13 @@ public class StudentDAOImplTest extends MyAbstractTestUnit{
 	public static void make() throws Exception{
 		DTO = new StudentDTO();
 		DTO.setAge(20);
-		DTO.setFilename("choa3");
+		DTO.setFilename("choa4");
 		DTO.setGrade("s");
-		DTO.setId("choa3");
-		DTO.setName("choa3");
-		DTO.setOriname("choa3");
-		DTO.setPw("choa3");
-		DTO.setSid("choa3");
+		DTO.setId("choa4");
+		DTO.setName("choa4");
+		DTO.setOriname("choa4");
+		DTO.setPw("choa4");
+		DTO.setSid("choa4");
 		DTO.setTid("t2");
 		DTO.setPhone("010");
 		

@@ -1,22 +1,18 @@
 package com.choa.ex6;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotEquals;
 
 import java.sql.Date;
 
 import javax.inject.Inject;
 
-
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 
 import com.choa.member.teacher.TeacherDAOImpl;
 import com.choa.member.teacher.TeacherDTO;
 
 public class TeacherDAOImplTest extends MyAbstractTestUnit {
-
-
 	@Inject
 	private TeacherDAOImpl impl;
 
@@ -24,12 +20,16 @@ public class TeacherDAOImplTest extends MyAbstractTestUnit {
 
 	@Test
 	public void test() throws Exception {
-		assertNotEquals(0, impl.memberJoin(DTO));
+		
+		System.out.println("티처테스트");
+		System.out.println(impl.memberJoin(DTO));
+	
 	}
+	
 	@BeforeClass
 	public static void make() throws Exception{
 		DTO = new TeacherDTO();
-		DTO.setId("t2");
+		DTO.setId("t3");
 		DTO.setPw("t2");
 		DTO.setName("t2");
 		DTO.setAge(25);

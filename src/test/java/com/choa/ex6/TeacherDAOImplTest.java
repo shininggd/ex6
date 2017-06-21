@@ -1,5 +1,7 @@
 package com.choa.ex6;
 
+
+
 import static org.junit.Assert.assertNotEquals;
 
 import java.sql.Date;
@@ -21,8 +23,8 @@ public class TeacherDAOImplTest extends MyAbstractTestUnit {
 	@Test
 	public void test() throws Exception {
 		
-		System.out.println("티처테스트");
-		System.out.println(impl.memberJoin(DTO));
+		assertNotEquals(0, impl.memberJoin(DTO));
+		
 	
 	}
 	

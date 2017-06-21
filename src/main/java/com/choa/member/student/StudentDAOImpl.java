@@ -13,15 +13,15 @@ import com.choa.member.teacher.TeacherDTO;
 public class StudentDAOImpl implements MemberDAO {
 	@Inject
 	private SqlSession sqlSession; 
-
-	private static final String MAPPER = "StudentMapper.";
+	private final String MM = "MemberMapper.";
+	private final String SM = "StudentMapper.";
 
 	@Override
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
 		int result = 0;
 		memberDTO = (StudentDTO)memberDTO;
-		result = sqlSession.insert(MAPPER+"joinMember", memberDTO);
-		result = result * sqlSession.insert(MAPPER+"joinStudent", memberDTO);
+		result = sqlSession.insert(MM+"joinMember", memberDTO);
+		result = result * sqlSession.insert(SM+"joinStudent", memberDTO);
 
 		return result;
 	}

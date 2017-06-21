@@ -14,8 +14,8 @@ public class TeacherDAOImpl implements MemberDAO {
 	
 	@Inject
 	private SqlSession sqlSession; 
-	
-	private static final String MAPPER = "TeacherMapper.";
+	private final String MM = "MemberMapper.";
+	private final String TM = "TeacherMapper.";
 	
 	@Override
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
@@ -24,8 +24,8 @@ public class TeacherDAOImpl implements MemberDAO {
 		System.out.println("전");
 		
 		memberDTO = (TeacherDTO)memberDTO;
-		result = sqlSession.insert(MAPPER+"joinMember", memberDTO);
-		result = result * sqlSession.insert(MAPPER+"joinTeacher", memberDTO);
+		result = sqlSession.insert(MM+"joinMember", memberDTO);
+		result = result * sqlSession.insert(TM+"joinTeacher", memberDTO);
 		return result;
 	}
 

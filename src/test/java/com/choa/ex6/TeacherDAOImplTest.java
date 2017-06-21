@@ -32,15 +32,15 @@ public class TeacherDAOImplTest extends MyAbstractTestUnit {
 	public static void make() throws Exception{
 		DTO = new TeacherDTO();
 		DTO.setId("t3");
-		DTO.setPw("t2");
-		DTO.setName("t2");
+		DTO.setPw("t3");
+		DTO.setName("t3");
 		DTO.setAge(25);
 		DTO.setGrade("t");
-		DTO.setFilename("t2");
-		DTO.setOriname("t2");
-		DTO.setTid("t2");
+		DTO.setFilename("t3");
+		DTO.setOriname("t3");
+		DTO.setTid("t3");
 		DTO.setHiredate(Date.valueOf("2017-6-21"));
-		DTO.setSubject("t2");
+		DTO.setSubject("t3");
 
 	}
 

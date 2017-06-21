@@ -10,7 +10,7 @@
   		insert into member values(#{id}, #{pw}, #{name}, #{age}, #{grade}, #{filename}, #{oriname})
   	</insert>
   	<insert id="joinStudent" parameterType="com.choa.member.student.StudentDTO">
-  		insert into student values({sid}, #{tid}, #{phone})
+  		insert into student values(#{sid}, #{tid}, #{phone})
   	</insert>
   
   </mapper>
